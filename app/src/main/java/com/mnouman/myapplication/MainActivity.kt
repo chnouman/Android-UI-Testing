@@ -10,15 +10,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
     }
 
     fun onSecondActivityClick(view: View) {
         startActivity(Intent(this, SecondActivity::class.java))
     }
 
-    fun onBackClick(view: View) {
-        onBackPressed()
-    }
 }

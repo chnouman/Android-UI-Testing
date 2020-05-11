@@ -23,8 +23,6 @@ class MainActivityTest {
         val activityScenario = ActivityScenario.launch(MainActivity::class.java)
         /*perform click*/
         onView(withId(R.id.mainButton)).perform(click())
-        /*check second activity*/
-        onView(withId(R.id.mainSecond)).check(matches(isDisplayed()))
     }
 
     /**
